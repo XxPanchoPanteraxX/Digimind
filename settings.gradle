@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Digimind_00000204270"
