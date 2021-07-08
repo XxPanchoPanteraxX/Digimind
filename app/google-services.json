@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "248393463970",
+    "project_id": "mydigimind-cbd0e",
+    "storage_bucket": "mydigimind-cbd0e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:248393463970:android:a1582b1c1d4f533876bffb",
+        "android_client_info": {
+          "package_name": "preciado.francisco.digimind_205371"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "248393463970-3u3neacdan156ii30ufovrr9ek1vb36v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "preciado.francisco.digimind_205371",
+            "certificate_hash": "258713e23e6124f571bccf49f092afd3ee25c144"
+          }
+        },
+        {
+          "client_id": "248393463970-gbt1epntna24hu6vmt2udgbvfh8mvdqs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8PizF4x-MXAb4jWKKVox-HlXChWjnVFk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "248393463970-gbt1epntna24hu6vmt2udgbvfh8mvdqs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

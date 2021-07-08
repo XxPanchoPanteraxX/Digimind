@@ -8,16 +8,23 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Digimind_00000204270">
-        <activity
-            android:name="preciado.francisco.digimind_205371.MainActivity"
-            android:label="@string/title_activity_main">
+        android:theme="@style/AppTheme">
+
+        <activity android:name="preciado.francisco.digimind_205371.ui.ContrasenaActivity"/>
+        <activity android:name="preciado.francisco.digimind_205371.ui.RegistroActivity"/>
+        <activity android:name="preciado.francisco.digimind_205371.ui.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name="preciado.francisco.digimind_205371.ui.MainActivity"
+            android:label="Mi digimind">
+        </activity>
+
     </application>
 
 </manifest>

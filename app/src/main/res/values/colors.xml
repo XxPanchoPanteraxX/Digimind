@@ -12,4 +12,6 @@
     <color name="background_reminder">#9CE1E1</color>
     <color name="colorAccent">#C875BA</color>
     <color name="gray">#A39F9F</color>
+    <color name="colorPrimaryLight">#D21BBABA</color>
+    <color name="blue">#1231DF</color>
 </resources>
