@@ -87,7 +87,6 @@ class DashboardFragment : Fragment() {
             if(checkSunday.isChecked)
                 days.add("Sunday")
 
-
             val actividad = hashMapOf(
                 "actividad" to et_titulo.text.toString(),
                 "email" to usuario.currentUser?.email.toString(),
@@ -113,11 +112,7 @@ class DashboardFragment : Fragment() {
                 }
         }
 
-
         return root
+
     }
-
-
-
-
 }

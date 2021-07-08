@@ -31,8 +31,6 @@ class HomeFragment : Fragment() {
         var first = true
     }
 
-
-
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
