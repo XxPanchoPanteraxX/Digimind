@@ -12,14 +12,16 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 
 import preciado.francisco.digimind_205371.R
 import preciado.francisco.digimind_205371.ui.AdaptadorTareas
 import preciado.francisco.digimind_205371.ui.Task
 
 class HomeFragment : Fragment() {
-    //private lateinit var storage: FirebaseFirestore
-    //private lateinit var usuario: FirebaseAuth
+    private lateinit var storage: FirebaseFirestore
+    private lateinit var usuario: FirebaseAuth
 
     private var adaptador: AdaptadorTareas? = null
     private lateinit var homeViewModel: HomeViewModel
@@ -42,8 +44,8 @@ class HomeFragment : Fragment() {
 
 
         var gridView: GridView = root.findViewById(R.id.gridview)
-        //storage = FirebaseFirestore.getInstance()
-        //usuario = FirebaseAuth.getInstance()
+        storage = FirebaseFirestore.getInstance()
+        usuario = FirebaseAuth.getInstance()
 
         if(first){
             fillTasks()
@@ -60,8 +62,8 @@ class HomeFragment : Fragment() {
 
     fun fillTasks(){
 
-        /**storage.collection("actividades")
-            .whereEqualTo("email", usuario.currentUser.email)
+        storage.collection("actividades")
+            .whereEqualTo("email", usuario.currentUser?.email)
             .get()
             .addOnSuccessListener {
                 it.forEach{
@@ -103,7 +105,6 @@ class HomeFragment : Fragment() {
             .addOnFailureListener{
                 Toast.makeText(context, it.toString(), Toast.LENGTH_SHORT).show()
             }
-*/
     }
 
 
